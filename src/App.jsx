@@ -1,18 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import AddSpotForm from './components/AddSpotForm'
-import HowItWorks from './components/HowItWorks'
+import Newsletter from './components/CTASection'
+import Footer from './components/Footer'
+import HeroMapSection from './components/HeroSection'
+import InfoCards from './components/HowItWorks'
+import MapPreview from './components/MapPreview'
+import StatsCards from './components/StatsCard'
 
 function App() {
+
   return (
-    <div>
-      <AddSpotForm/>
-      <HowItWorks/>
-    </div>
-    
+   <>
+    <HeroMapSection />
+    <InfoCards />
+    <MapPreview />
+    <StatsCards />
+    <Newsletter />
+    <AddSpotForm/>
+    <HowItWorks/>
+    <Footer />
+   </>
   )
 }
 
 export default App
+
+
+
