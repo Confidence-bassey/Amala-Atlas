@@ -24,7 +24,8 @@ const stats = [
 
 export default function StatsCards() {
   return (
-    <section className="w-full py-16 px-4 md:px-12 bg-gradient-to-br from-[#fdf7f9] to-[#f0f4fb] text-center">
+    <section className="w-full py-16 px-4 md:px-12 bg-gradient-to-r from-[#e8eff8] via-[#fdf5cc] to-[#e8eff8] text-center">
+      {/* <section className="w-full py-16 px-4 md:px-12 bg-gradient-to-br from-[#fdf7f9] to-[#f0f4fb] text-center"> */}
       {/* Section Heading */}
       <h2 className="text-3xl font-bold mb-2">Our Number</h2>
       <p className="text-gray-600 mb-10">

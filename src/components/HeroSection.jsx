@@ -1,10 +1,10 @@
 import React from 'react';
-import { FaSearch, FaStar } from 'react-icons/fa';
+// import { FaSearch, FaStar } from 'react-icons/fa';
 import MapPreview from './MapPreview'
 
 export default function HeroMapSection() {
   return (
-    <div className="bg-gradient-to-b from-white to-gray-50 pt-16 pb-24 px-4 md:px-10">
+    <div className="bg-white pt-16 pb-24 px-4 md:px-10">
       {/* Hero Section */}
       <div className="text-center max-w-3xl mx-auto mb-20">
         <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
