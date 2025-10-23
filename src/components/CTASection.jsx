@@ -1,38 +1,40 @@
 import React from "react";
 import newsletterImg from "../assets/newsletterImg.png";
 
-
 const Newsletter = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between bg-[#0C2E8A] rounded-2xl p-6 md:p-10">
-
-      <div className="flex-1 text-center md:text-left text-white">
-        <h2 className="text-2xl font-bold mb-2">Stay Updated</h2>
-        <p className="mb-4">
+    <div className="w-full flex flex-col md:flex-row items-stretch justify-between rounded-3xl p-8 md:p-12 max-w-5xl mx-auto gap-6 md:gap-0">
+      {/* Left Section */}
+      <div className="md:w-[75%] text-center md:text-left bg-[#0C2E8A] h-full flex-row p-11 rounded-2xl text-white space-y-4 items-center">
+        <h2 className="text-3xl font-bold text-center">Stay Updated</h2>
+        <p className="text-lg text-center">
           Get notified when we launch new features and find spots near you.
         </p>
 
-        <form className="flex items-center bg-white rounded-full overflow-hidden w-full max-w-md mx-auto md:mx-0">
+        <form className="flex items-center bg-white rounded-full overflow-hidden w-full max-w-md mx-auto h-[40px]">
           <input
             type="email"
             placeholder="Enter your email address"
-            className="flex-1 px-4 py-2 outline-none text-gray-700"
+            className="flex-1 px-5 py-3 outline-none text-gray-700 placeholder-gray-400 text-base"
           />
           <button
             type="submit"
-            className="bg-[#0C2E8A] text-white px-6 py-2 font-medium hover:bg-[#0A256E] transition"
+            className="bg-[#0C2E8A] text-white h-[32px] px-6 rounded-full font-medium hover:bg-[#0A256E] transition flex items-center justify-center mr-2"
           >
             Join
           </button>
         </form>
       </div>
 
-      <div className="flex-1 mt-6 md:mt-0 flex justify-center">
-        <img
-          src={newsletterImg} 
-          alt="Smiling Woman"
-          className="rounded-2xl max-w-xs md:max-w-sm"
-        />
+      {/* Right Section */}
+      <div className="md:w-[25%] ml-8 md:mt-0 flex justify-center items-stretch">
+        <div className="bg-[#E7EDFF] rounded-3xl p-4 flex items-center justify-center w-full h-full">
+          <img
+            src={newsletterImg}
+            alt="Newsletter illustration"
+            className="rounded-2xl w-60 h-auto object-cover"
+          />
+        </div>
       </div>
     </div>
   );
