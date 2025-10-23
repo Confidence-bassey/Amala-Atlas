@@ -1,5 +1,4 @@
 import React from 'react';
-// import { FaSearch, FaStar } from 'react-icons/fa';
 import MapPreview from './MapPreview'
 
 export default function HeroMapSection() {
