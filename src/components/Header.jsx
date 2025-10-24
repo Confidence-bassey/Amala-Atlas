@@ -1,5 +1,6 @@
 import React from "react";
 import logoaa from "../assets/logoaa.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -15,12 +16,12 @@ const Navbar = () => {
       </div>
 
       <div className="hidden md:flex items-center space-x-8">
-        <a href="#explore" className="text-gray-800 hover:text-[#0C2E8A]">
+        <Link to="/explore" className="text-gray-800 hover:text-[#0C2E8A]">
           Explore
-        </a>
-        <a href="#submit" className="text-gray-800 hover:text-[#0C2E8A]">
+        </Link>
+        <Link to="/submit" className="text-gray-800 hover:text-[#0C2E8A]">
           Submit
-        </a>
+        </Link>
         <a
           href="https://github.com/your-repo" 
           target="_blank"
@@ -29,12 +30,12 @@ const Navbar = () => {
         >
           GitHub
         </a>
-        <a
-          href="#agent"
+         <Link
+          to="/agent"
           className="bg-[#0C2E8A] text-white px-5 py-2 rounded-full hover:bg-[#0A256E] transition"
         >
           Try Agent
-        </a>
+        </Link>
       </div>
     </nav>
   );
