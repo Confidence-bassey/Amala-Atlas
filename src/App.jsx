@@ -1,32 +1,22 @@
-import './App.css'
-// import AddSpotForm from './components/AddSpotForm'
-import Newsletter from './components/CTASection'
-import Footer from './components/Footer'
-import Navbar from './components/Header'
-import HeroMapSection from './components/HeroSection'
-import HowItWorks from './components/HowItWorks'
 
-// import MapPreview from './components/MapPreview'
-import StatsCards from './components/StatsCard'
+
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import LandingPage from "./pages/LandingPage";
+import ExploreSpot from "./pages/ExploreSpot";
 
 function App() {
-
   return (
-   <>
-   <Navbar />
-    <HeroMapSection />
-    <HowItWorks/>
-    {/* <InfoCards /> */}
-    {/* <MapPreview /> */}
-    <StatsCards />
-    <Newsletter />
-    {/* <AddSpotForm/> */}
-    <Footer />
-   </>
-  )
+    <Router>
+      <Routes>
+
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/explore" element={<ExploreSpot />} />
+
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
-
-
-
+export default App;
