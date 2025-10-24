@@ -4,12 +4,12 @@ export default function AddNewSpot() {
   const [rating, setRating] = useState(0);
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100 p-4">
+    <div className="flex justify-center items-center min-h-screen bg-white p-4">
       <div className="bg-white w-full max-w-md rounded-lg shadow-lg p-6">
         {/* Header */}
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-lg font-semibold text-blue-600">Add New Spot</h2>
-          <button className="text-gray-500 hover:text-gray-800">&times;</button>
+          {/* <button className="text-gray-500 hover:text-gray-800">&times;</button> */}
         </div>
         <p className="text-sm text-gray-500 mb-4">Input spot details</p>
 
@@ -79,7 +79,7 @@ export default function AddNewSpot() {
             <span className="text-gray-500 text-sm mb-2">
               Click to upload photos of the Amala spot
             </span>
-            <span className="px-3 py-1 bg-blue-600 text-white text-sm rounded-md">
+            <span className="px-3 py-1 bg-blue-600 text-white text-sm rounded-full">
               Choose a photo
             </span>
             <input type="file" className="hidden" />
@@ -88,10 +88,10 @@ export default function AddNewSpot() {
 
         {/* Actions */}
         <div className="flex justify-between mt-6">
-          <button className="px-6 py-2 border rounded-md text-gray-700 hover:bg-gray-100">
+          <button className="px-6 py-2 border rounded-3xl text-gray-700 hover:bg-gray-100">
             Cancel
           </button>
-          <button className="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">
+          <button className="px-6 py-2 bg-blue-600 text-white rounded-3xl hover:bg-blue-700">
             Submit Spot
           </button>
         </div>
