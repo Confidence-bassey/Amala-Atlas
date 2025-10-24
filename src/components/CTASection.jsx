@@ -28,7 +28,7 @@ const Newsletter = () => {
 
       {/* Right Section */}
       <div className="md:w-[25%] ml-8 md:mt-0 flex justify-center items-stretch">
-        <div className="bg-[#E7EDFF] rounded-3xl p-4 flex items-center justify-center w-full h-full">
+        <div className="bg-[#E7EDFF] rounded-3xl flex items-center justify-center w-full h-full">
           <img
             src={newsletterImg}
             alt="Newsletter illustration"
